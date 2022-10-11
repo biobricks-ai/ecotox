@@ -1,12 +1,14 @@
 schema: '2.0'
 stages:
-  1-stage:
-    cmd: Rscript stages/01-stage.R
+  to-parquet:
+    cmd: clj -X biobricks.ecotox/build-parquet '{:db "data/ecotox_ascii" :output "data/ecotox_parquet"}'
     deps:
-    - path: stages/01-stage.R
-      md5: c468dc14527e00c339f146e1dba2bd3b
-      size: 118
+    - path: data/ecotox_ascii
+      md5: 3c1d6016fd057c38a9d5690fcf300c6a.dir
+      size: 2322245817
+      nfiles: 51
     outs:
-    - path: data/mtcars.parquet
-      md5: 77cf29accf9535522fad7db1486eff9a
-      size: 6243
+    - path: data/ecotox_parquet
+      md5: 4debb30e4bf026e8d00226726d7a0c5c.dir
+      size: 3768141088
+      nfiles: 48

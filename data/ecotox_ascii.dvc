@@ -1,0 +1,5 @@
+outs:
+- md5: 3c1d6016fd057c38a9d5690fcf300c6a.dir
+  size: 2322245817
+  nfiles: 51
+  path: ecotox_ascii
