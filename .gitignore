@@ -1,4 +1,11 @@
 .*
+!.dvcignore
+!.editorconfig
+!.envrc
+!.github
+!.gitignore
+!.vscode
+
 logs
 /download
 /temp
