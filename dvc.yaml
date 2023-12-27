@@ -2,8 +2,8 @@
 # see https://dvc.org/doc/user-guide/project-structure/dvcyaml-files#pipelines-files-dvcyaml
 stages:
   to-parquet:
-    cmd: clj -X biobricks.ecotox/build-parquet '{:db "data/ecotox_ascii" :output "data/ecotox_parquet"}'
+    cmd: clj -X biobricks.ecotox/build-parquet '{:db "data/ecotox_ascii" :output "brick"}'
     deps:
       - data/ecotox_ascii
     outs:
-      - data/ecotox_parquet
+      - brick

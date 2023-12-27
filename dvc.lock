@@ -1,14 +1,15 @@
 schema: '2.0'
 stages:
   to-parquet:
-    cmd: clj -X biobricks.ecotox/build-parquet '{:db "data/ecotox_ascii" :output "data/ecotox_parquet"}'
+    cmd: clj -X biobricks.ecotox/build-parquet '{:db "data/ecotox_ascii" :output "brick"}'
     deps:
     - path: data/ecotox_ascii
       md5: 3c1d6016fd057c38a9d5690fcf300c6a.dir
       size: 2322245817
       nfiles: 51
     outs:
-    - path: data/ecotox_parquet
-      md5: 4debb30e4bf026e8d00226726d7a0c5c.dir
-      size: 3768141088
+    - path: brick
+      hash: md5
+      md5: a64c66ade4f0eefc2651bf7b03fb3d79.dir
+      size: 3768405317
       nfiles: 48

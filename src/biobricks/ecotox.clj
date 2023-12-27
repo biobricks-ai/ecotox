@@ -49,7 +49,7 @@
       (write-parquet parquet-file rows))))
 
 (comment
-  (let [out (fs/path "data" "ecotox_parquet")]
+  (let [out (fs/path "brick")]
     (fs/delete-tree out)
     (build-parquet {:db "data/ecotox_ascii" :output (str out)}))
   )
