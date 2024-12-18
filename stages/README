@@ -1,0 +1,2 @@
+Currently developing R files (R00, R01, R02) to download ecotox data, install packages, and construct RDF file(s).
+Python files are a placeholder for later conversion to HDT.
